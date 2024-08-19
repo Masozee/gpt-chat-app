@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: GPT-like Chat API
+  version: 1.0.0
+  description: API for a GPT-like chat application using WebSockets
+
+paths:
+  /ws:
+    get:
+      summary: WebSocket connection endpoint
+      description: Establish a WebSocket connection for real-time chat
+      responses:
+        '101':
+          description: Switching Protocols to WebSocket
